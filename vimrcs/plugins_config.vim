@@ -15,6 +15,11 @@ call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
 call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
+" => YCM
+""""""""""""""""""""""""""""""
+let g:ycm_collect_identifiers_from_tags_files=0
+
+""""""""""""""""""""""""""""""
 " => bufExplorer plugin
 """"""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
@@ -117,10 +122,6 @@ let g:airline_theme='deus'
 let g:airline#extensions#tabline#formatter = 'jsformatter'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Ale
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:goyo_width=180
@@ -177,10 +178,11 @@ let g:user_emmet_leader_key=';'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => JsFileImport
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <Leader>uf <Plug>(JsFileImport)
-nnoremap <Leader>uF <Plug>(JsFileImportList)
-nnoremap <Leader>ug <Plug>(JsGotoDefinition)
-nnoremap <Leader>uG <Plug>(JsGotoDefinition)
-nnoremap <Leader>up <Plug>(PromptJsFileImport)
-nnoremap <Leader>us <Plug>(SortJsFileImport)
-nnoremap <Leader>uc <Plug>(JsFixImport)
+let g:js_file_import_sort_after_insert = 1
+nnoremap <leader>if <Plug>(JsFileImport)
+nnoremap <leader>iF <Plug>(JsFileImportList)
+nnoremap <leader>ig <Plug>(JsGotoDefinition)
+nnoremap <leader>iG <Plug>(JsGotoDefinition)
+nnoremap <leader>ip <Plug>(PromptJsFileImport)
+nnoremap <leader>is <Plug>(SortJsFileImport)
+nnoremap <leader>ic <Plug>(JsFixImport)
