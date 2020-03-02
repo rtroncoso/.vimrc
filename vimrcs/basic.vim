@@ -26,6 +26,7 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+set mouse=a
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -261,8 +262,8 @@ map <leader>bd :Bclose<cr>:tabclose<cr>gT
 " Move between tabs
 map <C-PageUp> :tabprev<cr>
 map <C-PageDown> :tabnext<cr>
-map <M-h> :tabprev<cr>
-map <M-l> :tabnext<cr>
+map <A-h> :tabprev<cr>
+map <A-l> :tabnext<cr>
 
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
